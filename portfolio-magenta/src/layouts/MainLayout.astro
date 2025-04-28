@@ -1,0 +1,26 @@
+---
+// MainLayout.astro
+import '../styles/global.css';
+const { title = 'Magenta | Front-End Developer' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content="Portfolio de Magenta, Front-End Developer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="fixed inset-0 -z-10">
+      <img src="/images/fondo gradiente.png" alt="Fondo Gradiente" class="w-full h-full object-cover" />
+    </div>
+    
+    <slot />
+  </body>
+</html>
