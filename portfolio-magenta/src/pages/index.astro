@@ -1,12 +1,88 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import Navbar from '../components/Navbar.astro';
-import Hero from '../components/Hero.astro';
-import SobreMi from '../components/SobreMi.astro';
+import MainLayout from "../layouts/MainLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import SobreMi from "../components/SobreMi.astro";
+import Projects from "../components/Projects.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import BackToTopButton from "../components/BackToTopButton.astro";
 ---
 
 <MainLayout>
-    <Navbar />
-    <Hero />
-    <SobreMi/>
+  <Navbar />
+  <Hero />
+
+  <div class="soft-gradient-background">
+    <SobreMi />
+    <Projects />
+    <Contact />
+  </div>
+  <div class="footer-background">
+    <Footer />
+  </div>
+
+  <BackToTopButton />
 </MainLayout>
+
+<style>
+  .soft-gradient-background {
+    position: relative;
+    background-color: white;
+    background-image: 
+      /* Patrón de puntos sutiles */
+      radial-gradient(
+        circle at center,
+        rgba(230, 230, 245, 0.5) 0,
+        rgba(230, 230, 245, 0.5) 1px,
+        transparent 1px
+      ),
+      /* Círculos de colores */
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(255, 220, 150, 0.5) 0%,
+          rgba(255, 220, 150, 0) 35%
+        ),
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(150, 210, 255, 0.5) 0%,
+        rgba(150, 210, 255, 0) 35%
+      ),
+      radial-gradient(
+        circle at 40% 45%,
+        rgba(220, 180, 255, 0.4) 0%,
+        rgba(220, 180, 255, 0) 35%
+      ),
+      radial-gradient(
+        circle at 80% 55%,
+        rgba(180, 255, 220, 0.4) 0%,
+        rgba(180, 255, 220, 0) 35%
+      ),
+      radial-gradient(
+        circle at 20% 80%,
+        rgba(255, 180, 230, 0.5) 0%,
+        rgba(255, 180, 230, 0) 35%
+      ),
+      radial-gradient(
+        circle at 70% 85%,
+        rgba(170, 210, 255, 0.5) 0%,
+        rgba(170, 210, 255, 0) 35%
+      );
+
+    background-size:
+      20px 20px,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      100% 100%;
+  }
+
+  .footer-background {
+    background-image: url("/images/fondo%20gradiente.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>

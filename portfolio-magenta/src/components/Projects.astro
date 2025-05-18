@@ -1,0 +1,841 @@
+<section
+  id="proyectos"
+  class="relative isolate py-12 sm:py-16 md:py-20 font-josefin"
+>
+  <!-- Modal mejorado para visualizar proyectos -->
+  <div id="projectModal" class="fixed inset-0 z-50 hidden">
+    <div
+      class="fixed inset-0 bg-black bg-opacity-90 transition-opacity"
+      id="modalOverlay"
+    >
+    </div>
+
+    <div class="relative z-10 w-full h-full flex flex-col">
+      <!-- Barra superior con controles -->
+      <div
+        class="flex items-center justify-between bg-gradient-to-r from-[#601986] to-[#9C5BDA] p-2 sm:p-4"
+      >
+        <h3
+          id="modalTitle"
+          class="text-white text-sm sm:text-base md:text-lg font-bold truncate pr-2"
+        >
+          ICAP ARGDEBRA - Vista completa
+        </h3>
+        <div class="flex items-center space-x-2 sm:space-x-4">
+          <button
+            id="downloadBtn"
+            class="text-white hover:text-[#F1C974] transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              ></path>
+            </svg>
+          </button>
+          <button
+            id="closeModal"
+            class="text-white hover:text-[#F1C974] transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 sm:h-6 sm:w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Contenedor principal del contenido -->
+      <div class="flex-grow overflow-hidden">
+        <iframe
+          id="modalContent"
+          src=""
+          class="w-full h-full border-0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <div
+    class="container mx-auto px-6 sm:px-8 md:px-10 max-w-6xl text-[#2B0B3A] text-sm sm:text-base md:text-lg"
+  >
+    <h2
+      class="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text text-center mb-6 sm:mb-8 md:mb-10 bg-gradient-to-r from-[#66C4FF] to-[#9C5BDA]"
+    >
+      Proyectos
+    </h2>
+
+    <!-- Proyecto ARGDEBRA -->
+    <div class="flex flex-col md:flex-row items-center mb-16 sm:mb-24 gap-8">
+      <div class="w-full md:w-1/2 order-2 md:order-1">
+        <div class="space-y-3">
+          <p class="text-sm text-[#9C5BDA]">10/05/2023</p>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#601986] mb-4">
+            ICAP ARGDEBRA
+          </h3>
+
+          <div
+            class="bg-gradient-to-r from-[#DBECFF] to-[#F2D1FF] p-4 md:p-6 rounded-xl"
+          >
+            <p class="text-sm sm:text-base text-[#2B215A]">
+              Desarrollé una plataforma educativa completa para ICAP ARGDEBRA,
+              empresa especializada en certificaciones profesionales y
+              diplomados. Implementé una arquitectura moderna con Next.js en el
+              frontend para optimizar el rendimiento y mejorar la experiencia
+              del usuario. El backend lo construi con Express para garantizar
+              APIs eficientes y escalables. Diseñé y estructuré una base de
+              datos relacional en MySQL e implementé la infraestructura en AWS
+              para asegurar alta disponibilidad y rápido tiempo de respuesta.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Next.js</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Figma</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Tailwind</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Express</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >AWS</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >MySQL</span
+              >
+            </div>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="#"
+                class="inline-block py-2 px-4 bg-gradient-to-r from-[#9C5BDA] to-[#66C4FF] text-white font-medium rounded-full hover:opacity-90 transition-colors text-sm"
+              >
+                Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 order-1 md:order-2">
+        <div
+          class="rounded-xl overflow-hidden shadow-lg cursor-pointer project-image-container"
+          data-project-url="/pdf/argdebra.pdf"
+          data-project-title="ICAP ARGDEBRA"
+        >
+          <img
+            src="/images/argdebra.png"
+            alt="ICAP ARGDEBRA - Página web para certificados y diplomados"
+            class="w-full h-auto object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center"
+          >
+            <span
+              class="text-white opacity-0 hover:opacity-100 transition-opacity bg-[#601986] bg-opacity-70 px-4 py-2 rounded-full flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+              Ver completo
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto MEDPRIME -->
+    <div class="flex flex-col md:flex-row items-center mb-16 sm:mb-24 gap-8">
+      <div class="w-full md:w-1/2">
+        <div
+          class="rounded-xl overflow-hidden shadow-lg cursor-pointer project-image-container"
+          data-project-url="/pdf/medprime.pdf"
+          data-project-title="MEDPRIME"
+        >
+          <img
+            src="/images/medprime.png"
+            alt="MEDPRIME - Plataforma de venta de productos médicos"
+            class="w-full h-auto object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center"
+          >
+            <span
+              class="text-white opacity-0 hover:opacity-100 transition-opacity bg-[#601986] bg-opacity-70 px-4 py-2 rounded-full flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+              Ver completo
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <div class="space-y-3">
+          <p class="text-sm text-[#9C5BDA]">05/04/2023</p>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#601986] mb-4">
+            MEDPRIME
+          </h3>
+
+          <div
+            class="bg-gradient-to-r from-[#FFF0C0] to-[#FFD4EF] p-4 md:p-6 rounded-xl"
+          >
+            <p class="text-sm sm:text-base text-[#2B215A]">
+              Creé un e-commerce especializado en productos médicos con un
+              enfoque en seguridad y usabilidad. Desarrollé una interfaz
+              intuitiva y responsiva utilizando Next.js que optimiza la
+              experiencia de compra. Construí un robusto backend con Express
+              para manejar transacciones y filtrado de los productos. Implementé
+              una base de datos NoSQL en MongoDB para almacenamiento flexible de
+              productos y pedidos. El despliegue lo realice en Google Cloud
+              Platform (GCP) utilizando Cloud Run con contenedores Docker,
+              garantizando así escalabilidad y un rendimiento óptimo.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Next.js</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Tailwind</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Figma</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Express</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >MongoDB</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >GCP</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Docker</span
+              >
+            </div>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="#"
+                class="inline-block py-2 px-4 bg-gradient-to-r from-[#9C5BDA] to-[#66C4FF] text-white font-medium rounded-full hover:opacity-90 transition-colors text-sm"
+              >
+                Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto WIRBI -->
+    <div class="flex flex-col md:flex-row items-center mb-16 sm:mb-24 gap-8">
+      <div class="w-full md:w-1/2 order-2 md:order-1">
+        <div class="space-y-3">
+          <p class="text-sm text-[#9C5BDA]">10/05/2023</p>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#601986] mb-4">
+            WIRBI
+          </h3>
+
+          <div
+            class="bg-gradient-to-r from-[#DBECFF] to-[#F2D1FF] p-4 md:p-6 rounded-xl"
+          >
+            <p class="text-sm sm:text-base text-[#2B215A]">
+              Desarrollé una plataforma web completa para Wirbi, una empresa
+              especializada en servicios de reclutamiento y selección de
+              personal. Implementé la plataforma con Next.js para un rendimiento
+              óptimo, complementado con Tailwind CSS para un diseño responsive
+              que funciona perfectamente en todos los dispositivos. Integré
+              Swiper.js para crear carruseles interactivos que muestran
+              servicios destacados. El backend fue construido con Express y
+              Node.js, permitiendo una gestión eficiente de solicitudes y
+              procesos de reclutamiento.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Next.js</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Figma</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Tailwind</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Express</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >AWS</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >MySQL</span
+              >
+            </div>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="https://www.wirbi.com/"
+                target="_blank"
+                class="inline-block py-2 px-4 bg-gradient-to-r from-[#9C5BDA] to-[#66C4FF] text-white font-medium rounded-full hover:opacity-90 transition-colors text-sm"
+              >
+                Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 order-1 md:order-2">
+        <div
+          class="rounded-xl overflow-hidden shadow-lg cursor-pointer project-image-container"
+          data-project-url="/pdf/wirbi.pdf"
+          data-project-title="WIRBI"
+        >
+          <img
+            src="/images/wirbiPage.png"
+            alt="Wirbi - Plataforma de reclutamiento y selección de personal"
+            class="w-full h-auto object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center"
+          >
+            <span
+              class="text-white opacity-0 hover:opacity-100 transition-opacity bg-[#601986] bg-opacity-70 px-4 py-2 rounded-full flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+              Ver completo
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto RADIOVERSO -->
+    <div class="flex flex-col md:flex-row items-center mb-16 sm:mb-24 gap-8">
+      <div class="w-full md:w-1/2">
+        <div
+          class="rounded-xl overflow-hidden shadow-lg cursor-pointer project-image-container"
+          data-project-url="/pdf/radioverso.pdf"
+          data-project-title="RADIOVERSO"
+        >
+          <img
+            src="/images/radioversoPage.png"
+            alt="Radioverso - Plataforma de difusión de música local"
+            class="w-full h-auto object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center"
+          >
+            <span
+              class="text-white opacity-0 hover:opacity-100 transition-opacity bg-[#601986] bg-opacity-70 px-4 py-2 rounded-full flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+              Ver completo
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <div class="space-y-3">
+          <p class="text-sm text-[#9C5BDA]">12/11/2022</p>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#601986] mb-4">
+            RADIOVERSO
+          </h3>
+
+          <div
+            class="bg-gradient-to-r from-[#FFF0C0] to-[#FFD4EF] p-4 md:p-6 rounded-xl"
+          >
+            <p class="text-sm sm:text-base text-[#2B215A]">
+              Diseñé y desarrollé una landing page atractiva para Radioverso,
+              una empresa dedicada a la difusión de música local y al desarrollo
+              de la industria musical nacional. Creé el concepto visual completo
+              en Figma, enfocándome en una estética moderna que resuena con su
+              audiencia juvenil y artística. Implementé la página utilizando
+              React para lograr una interfaz dinámica y atractiva con
+              animaciones fluidas que mejoran la experiencia del usuario. El
+              proyecto incluye reproducción de audio integrada para muestras
+              musicales y una sección de artistas destacados. Realicé el
+              despliegue en Google Cloud Platform (GCP) para garantizar alta
+              disponibilidad y tiempos de carga optimizados.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >React</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Figma</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >CSS3</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >GCP</span
+              >
+            </div>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="https://radioverso.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block py-2 px-4 bg-gradient-to-r from-[#9C5BDA] to-[#66C4FF] text-white font-medium rounded-full hover:opacity-90 transition-colors text-sm"
+              >
+                Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto MASTERBIKAS -->
+    <div class="flex flex-col md:flex-row items-center mb-16 sm:mb-24 gap-8">
+      <div class="w-full md:w-1/2 order-2 md:order-1">
+        <div class="space-y-3">
+          <p class="text-sm text-[#9C5BDA]">15/09/2022</p>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#601986] mb-4">
+            MASTERBIKAS
+          </h3>
+
+          <div
+            class="bg-gradient-to-r from-[#DBECFF] to-[#F2D1FF] p-4 md:p-6 rounded-xl"
+          >
+            <p class="text-sm sm:text-base text-[#2B215A]">
+              Desarrollé una plataforma educativa interactiva para MasterBikas,
+              especializada en asesoría académica para diferentes materias con
+              enfoque en matemáticas, Excel y álgebra. Implementé una interfaz
+              dinámica y responsiva utilizando React y Material UI (MUI). El
+              sistema permite a los estudiantes hacer preguntas personalizadas
+              que se almacenan en AWS S3 junto con imágenes relevantes. El
+              backend fue construido con Node.js y Express.Desplegué la
+              aplicación en AWS utilizando CloudFront para garantizar una
+              entrega rápida de contenido y una experiencia de usuario fluida en
+              cualquier ubicación.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >React</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Material UI</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Node.js</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Express</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >AWS</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >S3</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >CloudFront</span
+              >
+            </div>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="https://master-bikas.com/"
+                class="inline-block py-2 px-4 bg-gradient-to-r from-[#9C5BDA] to-[#66C4FF] text-white font-medium rounded-full hover:opacity-90 transition-colors text-sm"
+              >
+                Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 order-1 md:order-2">
+        <div
+          class="rounded-xl overflow-hidden shadow-lg cursor-pointer project-image-container"
+          data-project-url="/pdf/masterbikas.pdf"
+          data-project-title="MASTERBIKAS"
+        >
+          <img
+            src="/images/masterbikas.png"
+            alt="MASTERBIKAS - Plataforma educativa interactiva"
+            class="w-full h-auto object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center"
+          >
+            <span
+              class="text-white opacity-0 hover:opacity-100 transition-opacity bg-[#601986] bg-opacity-70 px-4 py-2 rounded-full flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+              Ver completo
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto TEKREA -->
+    <div class="flex flex-col md:flex-row items-center mb-16 sm:mb-24 gap-8">
+      <div class="w-full md:w-1/2">
+        <div
+          class="rounded-xl overflow-hidden shadow-lg cursor-pointer project-image-container"
+          data-project-url="/pdf/tekrea.pdf"
+          data-project-title="TEKREA"
+        >
+          <img
+            src="/images/tekrea.png"
+            alt="Tekrea - Proveedores de soluciones digitales"
+            class="w-full h-auto object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center"
+          >
+            <span
+              class="text-white opacity-0 hover:opacity-100 transition-opacity bg-[#601986] bg-opacity-70 px-4 py-2 rounded-full flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                ></path>
+              </svg>
+              Ver completo
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <div class="space-y-3">
+          <p class="text-sm text-[#9C5BDA]">20/06/2022</p>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#601986] mb-4">
+            TEKREA
+          </h3>
+
+          <div
+            class="bg-gradient-to-r from-[#FFF0C0] to-[#FFD4EF] p-4 md:p-6 rounded-xl"
+          >
+            <p class="text-sm sm:text-base text-[#2B215A]">
+              Desarrollé un sitio web corporativo completo para Tekrea, empresa
+              proveedora de soluciones digitales especializada en seguridad
+              informática, fábrica de software, cloud y consultoría en
+              tecnología de la información. Implementé una interfaz moderna y
+              profesional utilizando React junto con Material UI (MUI).Incorporé
+              animaciones fluidas con Framer Motion para mejorar el engagement. La navegación entre
+              secciones fue optimizada con React Router para una experiencia sin
+              interrupciones. El proyecto fue desplegado en Google Cloud
+              Platform (GCP), permitiendo a Tekrea mostrar eficazmente sus servicios y atraer
+              nuevos clientes para impulsar su crecimiento empresarial.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >React</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Material UI</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >React Router</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >Framer Motion</span
+              >
+              <span
+                class="px-3 py-1 bg-white/50 rounded-full text-xs font-medium text-[#601986]"
+                >GCP</span
+              >
+            </div>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="https://tekrea.io/"
+                class="inline-block py-2 px-4 bg-gradient-to-r from-[#9C5BDA] to-[#66C4FF] text-white font-medium rounded-full hover:opacity-90 transition-colors text-sm"
+              >
+                Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+  
+  .font-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .project-image-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .project-image-container:hover {
+    transform: scale(1.02);
+  }
+
+  .project-image-container span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .project-image-container:hover span {
+    opacity: 1;
+  }
+  
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionamos todos los contenedores de proyectos
+    const projectContainers = document.querySelectorAll(
+      ".project-image-container"
+    );
+    const modal = document.getElementById("projectModal");
+    const modalContent = document.getElementById(
+      "modalContent"
+    ) as HTMLIFrameElement | null;
+    const modalTitle = document.getElementById("modalTitle");
+    const closeModalBtn = document.getElementById("closeModal");
+    const modalOverlay = document.getElementById("modalOverlay");
+    const downloadBtn = document.getElementById("downloadBtn");
+
+    // Función para abrir el modal
+    function openProjectModal(url: string, title: string): void {
+      if (modalContent && modal && modalTitle) {
+        // Establecemos la URL en el iframe
+        modalContent.src = url;
+
+        // Actualizamos el título
+        modalTitle.textContent = title + " - Vista completa";
+
+        // Configuramos el botón de descarga
+        if (downloadBtn) {
+          downloadBtn.onclick = function () {
+            window.open(url, "_blank");
+          };
+        }
+
+        // Mostramos el modal
+        modal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+
+        // Establecemos el foco en el modal para accesibilidad
+        modal.focus();
+      }
+    }
+
+    // Función para cerrar el modal
+    function closeProjectModal(): void {
+      if (modal && modalContent) {
+        modal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+
+        // Limpiamos el iframe después de un tiempo para evitar problemas
+        setTimeout(() => {
+          if (modalContent) {
+            modalContent.src = "";
+          }
+        }, 300);
+      }
+    }
+
+    // Agregamos event listeners a cada contenedor de proyecto
+    projectContainers.forEach((container) => {
+      container.addEventListener("click", function (this: HTMLElement) {
+        const projectUrl = this.getAttribute("data-project-url");
+        const projectTitle = this.getAttribute("data-project-title");
+
+        if (projectUrl && projectTitle) {
+          openProjectModal(projectUrl, projectTitle);
+        }
+      });
+    });
+
+    // Event listeners para cerrar el modal
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener("click", closeProjectModal);
+    }
+
+    if (modalOverlay) {
+      modalOverlay.addEventListener("click", closeProjectModal);
+    }
+
+    // Cerrar con tecla Escape
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeProjectModal();
+      }
+    });
+  });
+</script>
